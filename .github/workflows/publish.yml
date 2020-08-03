@@ -26,4 +26,4 @@ jobs:
     - name: Publish the package to GPR
       run: dotnet nuget push bin/Release/*.nupkg --source ${{ env.source-url }}
       env:
-        NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NUGET_AUTH_TOKEN: ${{ secrets.WRITE_PACKAGES_TOKEN }}
